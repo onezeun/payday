@@ -32,7 +32,7 @@ const DdayCounter = () => {
       setHours(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
       setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
       setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
-      
+
       setLoading(false);
     }, 1000);
 
@@ -44,9 +44,12 @@ const DdayCounter = () => {
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <div className="p-4 bg-gray-200 rounded-lg">
-          <div className="text-4xl">
-            {days}일 {hours}시 {minutes}분 {seconds}초
+        <div className="text-center w-screen font-bold">
+          <span className="text-2xl">월급날까지</span>
+          <div className="mt-3 p-4 bg-white bg-opacity-50 w-full">
+            <div className="text-4xl">
+              {days}일 {hours}시간 {minutes}분 {seconds}초
+            </div>
           </div>
         </div>
       )}
