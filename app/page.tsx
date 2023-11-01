@@ -18,7 +18,7 @@ export default function Home() {
       if (jsConfetti.current) {
         jsConfetti.current.addConfetti({
           emojis: ['🪙', '💸', '💰', '🤑'],
-          emojiSize: 30,
+          emojiSize: 100,
           confettiNumber: 20,
         });
       }
@@ -28,11 +28,9 @@ export default function Home() {
       }, 500);
     };
 
-    // 클릭 이벤트 리스너를 추가합니다.
     window.addEventListener('click', handleGlobalClick);
 
     return () => {
-      // 컴포넌트가 언마운트될 때 이벤트 리스너를 제거합니다.
       window.removeEventListener('click', handleGlobalClick);
     };
   }, []);
@@ -42,7 +40,7 @@ export default function Home() {
       <div>
         <DdayCounter />
       </div>
-      <div className="relative h-auto w-full max-w-2xl">
+      <div className="relative w-full h-auto max-w-2xl">
         <CoinJar />
       </div>
     </main>
