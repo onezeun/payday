@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko">
       <head></head>
       <body>
-        <div className="min-h-screen overflow-hidden">{children}</div>
+        <div className="overflow-hidden h-real-screen min-h-real-screen">{children}</div>
       </body>
     </html>
   );

@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        'real-screen': 'calc(var(--vh) * 100)',
+      },
+      minHeight: {
+        'real-screen': 'calc(var(--vh) * 100)',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
