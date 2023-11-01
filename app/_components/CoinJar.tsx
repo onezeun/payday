@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const CoinJar = () => {
   return (
-    <div className='m-auto scale-150'>
+    <div className="m-auto scale-150">
       <img className="absolute top-0 left-0 w-full h-auto" alt="병" src="/coin_jar_001.png" />
       <motion.img
         animate={{ y: [10, 0, 10] }}
